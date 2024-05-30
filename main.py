@@ -8,7 +8,7 @@ app = FastAPI()
 client = MongoClient("mongodb+srv://lliammcbean:yniSWTrzKrE41iNW@cluster0.ggq86fh.mongodb.net/")
 db = client.personal
 
-origins = ["http://localhost:3000", "https://lliam-test.netlify.app/"]
+origins = ["http://localhost:3000", "https://lliam-test.netlify.app"]
 
 app.add_middleware(
     CORSMiddleware,
